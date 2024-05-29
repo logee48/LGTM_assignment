@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "linkedin pic extension",
+    "version": "1.0",
+    "description": "changee profile pic",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.linkedin.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
